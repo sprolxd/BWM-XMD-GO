@@ -1,3 +1,4 @@
+
 //  [BWM-XMD QUANTUM EDITION]                                           
 //  >> A superposition of elegant code states                           
 //  >> Collapsed into optimal execution                                
@@ -8,12 +9,12 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const adams = require("./config");
 
-async function fetchHOMEUrl() {
+async function fetchINDEXUrl() {
   try {
     const response = await axios.get(adams.BWM_XMD);
     const $ = cheerio.load(response.data);
 
-    const targetElement = $('a:contains("HOME")');
+    const targetElement = $('a:contains("INDEX")');
     const targetUrl = targetElement.attr('href');
 
     if (!targetUrl) {
@@ -30,4 +31,4 @@ async function fetchHOMEUrl() {
   }
 }
 
-fetchHOMEUrl();
+fetchINDEXUrl();
