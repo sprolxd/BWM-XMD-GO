@@ -101,7 +101,7 @@
     },
     "SESSION_ID": {
       "description": "Your session ID",
-      "value": "",
+      "value": "Bwmxmd_a1321",
       "required": true
     },    
     "STARTING_BOT_MESSAGE": {
