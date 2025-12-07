@@ -76,7 +76,7 @@
     },
     "OWNER_NUMBER": {
       "description": "Enter your number eg, 2547xxxxxxx",
-      "value": "",
+      "value": "256788964521",
       "required": false 
     },
     "STATUS_REACT_EMOJIS": {
